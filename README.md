@@ -5,6 +5,9 @@ A web-based Medical Shop Manager application designed to help medical shop owner
 ## Live Demo
 
 [Open Medical Shop Manager App](https://yashwanthrevu9.github.io/medical-shop-app/)
+## Dashboard Preview
+
+![Medical Shop Manager Dashboard](dashboard.png)
 
 ## Features
 
