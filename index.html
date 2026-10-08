@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pharmacy Hub</title>
+<script src="https://unpkg.com/@zxing/library@0.19.1"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app-shell">
+  <aside class="sidebar">
+    <div>
+      <p class="brand-kicker">Retail pharmacy</p>
+      <h1>Pharmacy Hub</h1>
+      <p class="brand-copy">Stock, customers, and billing in one place.</p>
+    </div>
+
+    <nav class="nav-list">
+      <button class="nav-btn active" data-view="dashboard" onclick="renderDashboard()">Dashboard</button>
+      <button class="nav-btn" data-view="stock" onclick="renderAddStock()">Add Stock</button>
+      <button class="nav-btn" data-view="inventory" onclick="renderInventory()">Inventory</button>
+      <button class="nav-btn" data-view="billing" onclick="renderBillingEntry()">Billing</button>
+      <button class="nav-btn" data-view="sales" onclick="renderSalesHistory()">Sales History</button>
+      <button class="nav-btn" data-view="income" onclick="renderIncome()">Income</button>
+    </nav>
+
+    <button class="btn-logout" onclick="logout()">Logout</button>
+  </aside>
+
+  <main class="main-panel">
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">Medical shop manager</p>
+        <h2>Professional billing and inventory workspace</h2>
+      </div>
+    </header>
+
+    <section id="scannerPanel" class="scanner-panel hidden">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Barcode scanner</p>
+          <h3>Point the camera at the medicine barcode</h3>
+        </div>
+        <button class="btn-secondary small" onclick="stopScanner()">Close Scanner</button>
+      </div>
+      <video id="video" muted playsinline></video>
+    </section>
+
+    <section id="content"></section>
+  </main>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
