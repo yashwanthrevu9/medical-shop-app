@@ -1,20 +1,30 @@
 # Medical Shop Manager App
 
-A simple web-based Medical Shop Manager application designed to help manage medicines and provide a user-friendly interface for a medical shop.
+A web-based Medical Shop Manager application designed to help medical shop owners manage medicines, stock, billing, and daily operations through a simple and user-friendly interface.
+
+## Live Demo
+
+[Open Medical Shop Manager App](https://yashwanthrevu9.github.io/medical-shop-app/)
 
 ## Features
 
-- User Login and Authentication
-- Medicine Management
-- Simple and Clean User Interface
-- Easy Navigation
-- Web-based application
+- Secure login and authentication
+- Medicine and stock management
+- Medicine barcode scanning
+- Real-time stock updates
+- Automatic invoice generation
+- Billing management
+- Customer management
+- Simple and responsive user interface
+- Local data storage
 
 ## Technologies Used
 
-- HTML
-- CSS
+- HTML5
+- CSS3
 - JavaScript
+- Barcode Scanner Library
+- LocalStorage API
 
 ## Project Structure
 
